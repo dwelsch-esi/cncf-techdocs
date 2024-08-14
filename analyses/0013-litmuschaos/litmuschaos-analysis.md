@@ -56,7 +56,6 @@ GitHub repo.
 #### In scope
 
 - Website: <https://litmuschaos.io/>
-- Old website repo: <https://github.com/litmuschaos/website-litmuschaos>
 - Website repo: <https://github.com/litmuschaos/litmus-website-2>
 - Documentation repo: <https://github.com/litmuschaos/litmus-docs/>
 - Main project repo (for governance and contributor docs):
@@ -173,8 +172,6 @@ the APIs is on various GitHub Pages websites.
 | Legacy previews | <https://docs.litmus.com/legacy-previews>                      |
 | Tutorials       | <https://docs.litmus.com/legacy-previews>                      |
 
-<!-- markdownlint-enable line-length -->
-
 The API documentation seems complete, but there is no readily available
 introduction explaining the differences between them.
 
@@ -187,6 +184,8 @@ installation, configuration, and running a "first-time" experiment.
   [Schedule a chaos scenario](https://v2-docs.litmuschaos.io/docs/user-guides/schedule-workflow)
   point to the `litmusctl` reference. While relevant, this is not the same as
   explicit instructions for connecting to a delegate.
+
+<!-- markdownlint-enable line-length -->
 
 The "happy path" seems well documented, but disorganized. This includes a basic
 Getting Started workflow ("Installation" and "Run Your First Chaos Scenario")
@@ -305,7 +304,7 @@ complete. For complex procedures, it's OK to link to sub-procedures or (usually
 better) put preliminary tasks in the Prerequisites section.
 
 Ensure that installation, setup, and verification have a clear, linked path for
-each user role. See [New user content](#new-user-content) below.
+each user role. See [New user content](#New-user-content) below.
 
 Organize the User Guide by task. Some of the tasks will align with the current
 function-based organization, but some will not. If necessary, split it into two
@@ -475,14 +474,14 @@ Litmus has separate websites for its documentation and for its project website.
 
 The project website has been replaced:
 
-The [new project repo](<(https://github.com/litmuschaos/website-litmuschaos)>)
+The [new project repo](<https://github.com/litmuschaos/litmus-website-2>)
 seems to be currently maintained and was last touched in May.
 
-An [obsolete website](https://github.com/litmuschaos/website-litmuschaos) is
-archived at the same GitHub URL and was last updated three years ago. The
-archived repo is listed on the project page. Aside from a "Public archive"
-badge in the repo directory, there is no indication that the old website
-repo is inactive, nor is there a link in the archive to the current repo.
+An obsolete website named "website-litmuschaos: is archived at the same 
+GitHub URL and was last updated three years ago. The archived repo is 
+listed on the project page. Aside from a "Public archive" badge in the 
+repo directory, there is no indication that the old website repo is 
+inactive, nor is there a link in the archive to the current repo.
 
 There is a dedicated repository for the LitmusChaos documentation. However,
 the following documentation is maintained separately, in different locations:
@@ -621,7 +620,6 @@ websites:
 | Site                                                  | Repository                                               | Tool or Stack            |
 | ----------------------------------------------------- | -------------------------------------------------------- | ------------------------ |
 | [Project website](https://litmuschaos.io/)            | https://github.com/litmuschaos/litmus-website-2          | React/Next/Tailwind/SCSS |
-| Old project website                                   | https://github.com/litmuschaos/website-litmuschaos       | Gatsby/React             |
 | [Documentation website](https://docs.litmuschaos.io/) | https://github.com/litmuschaos/litmus-docs/              | Docusaurus/Netlify       |
 | [Tutorials](https://v2-docs.litmuschaos.io/tutorials) | https://github.com/litmuschaos/tutorials                 | Google Codelab?          |
 | APIs                                                  | https://github.com/litmuschaos/litmus/tree/master/mkdocs | MkDocs                   |
@@ -727,6 +725,5 @@ The numeric rating values used in this document are as follows
 [issues]: ./litmuschaos-issues.md
 [issues list]: ./litmuschaos-issues.md
 [project-website]: https://litmuschaos.io/
-[Rating (1-5)]: #rating-values
 [rfc-spec]: https://www.rfc-editor.org/rfc/rfc2119
 [website guidelines]: ../../docs/website-guidelines-checklist.md
