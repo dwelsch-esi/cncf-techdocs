@@ -2,7 +2,7 @@
 title: LitmusChaos Documentation Analysis
 tags: LitmusChaos
 created: 2024-08-02
-modified: 2024-08-13
+modified: 2024-08-19
 author: Dave Welsch (@dwelsch-esi)
 ---
 
@@ -65,6 +65,8 @@ GitHub repo.
 #### Out of scope
 
 - Other LitmusChaos repos: <https://github.com/litmuschaos/>\*
+- Litmus Software (a completely unrelated company and product based in Massachusetts):
+  https://litmus.com/*
 
 ### How this document is organized
 
@@ -157,23 +159,13 @@ first ToC heading).
 There is high level, conceptual “About” content. This content is split between
 at least two sections, "Introduction" and "Concepts".
 
-The documentation seems feature-complete. However, the documentation resides on
-several websites. The tutorials have their own site, and The documentation for
-the APIs is on various GitHub Pages websites.
+The main documentation site seems feature-complete. However, the documentation
+resides on several websites. The tutorials have their own site
 
-<!-- markdownlint-disable line-length -->
-
-| Docs            | URL                                                            |
-| --------------- | -------------------------------------------------------------- |
-| Portal API      | <https://litmuschaos.github.io/litmus/graphql/v2.0.0/api.html> |
-| General API     | <https://docs.litmus.com/>                                     |
-| Instant API     | <https://docs.litmus.com/instant>                              |
-| Email analytics | <https://docs.litmus.com/email-analytics>                      |
-| Legacy previews | <https://docs.litmus.com/legacy-previews>                      |
-| Tutorials       | <https://docs.litmus.com/legacy-previews>                      |
-
-The API documentation seems complete, but there is no readily available
-introduction explaining the differences between them.
+The documentation for the [API][api-site] is on its own website and is 
+maintained from the main project repository. The API documentation is 
+incomplete, containing very sparse semantic information about the API endpoints,
+objects, and actions.
 
 There are step-by-step instructions for most important functionality, including
 installation, configuration, and running a "first-time" experiment.
@@ -293,11 +285,9 @@ Create and maintain a site map that describes the components of the
 documentation set. Consolidate the documentation so that, to the extent
 possible, it is maintained in a single repo.
 
-Write an introduction to the APIs, explaining the purpose of each and linking to
-their reference documentation. The API docs might be an exception to the
-documentation single-source rule, since the references are generated from code
-or from YAML files in the code repo. Make sure, however, that semantic
-information and examples are included in the API references.
+Add semantic information and examples to the API reference. Current API
+documentation is mostly skeletal, containing no guidance on how to use the
+API elements.
 
 Write tasks and procedures as step-by-step instructions. Ensure that tasks are
 complete. For complex procedures, it's OK to link to sub-procedures or (usually
@@ -475,7 +465,7 @@ Litmus has separate websites for its documentation and for its project website.
 The project website has been replaced:
 
 The [new project repo](<https://github.com/litmuschaos/litmus-website-2>)
-seems to be currently maintained and was last touched in May.
+seems to be currently maintained and was last touched in May of 2024.
 
 An obsolete website named "website-litmuschaos: is archived at the same 
 GitHub URL and was last updated three years ago. The archived repo is 
@@ -492,7 +482,7 @@ the following documentation is maintained separately, in different locations:
 - The **API** for the control center is separate from the main documentation and
   seems to be served from GitHub.
 
-The API seems to be documented from a YAML file in the main code repo. There is
+The API seems to be documented from the main code repo. There is
 no hint that this is the API documentation (unless you're aware that the
 `mkdocs` directory is for the API). There does not seem to be a documented
 strategy for updating the API or linking the API to the documentation website.
@@ -544,13 +534,13 @@ There is no text-to-speech option available on the site.
 Branding seems inconsistent.
 
 There is a recognizable logo and color scheme for most of the sites. However,
-sites that are built from other repos (some of the APIs, the experiment library)
+sites that are built from other repos (the API, the experiment library)
 have different color schemes and font choices. For example, the font used in the
 logo is different between the project website and the documentation website.
 
 Page design uses different layouts on different pages. The documentation layout
 is a single column, with graphics in-line, which is appropriate. The project
-landing page, the API pages, and the tutorial page all use different layouts.
+landing page, the API page, and the tutorial page all use different layouts.
 
 The brand's base font is a legible sans-serif font. The tutorial site landing
 page uses similar fonts but the tutorials themselves have a completely
@@ -616,13 +606,13 @@ As far as I can tell, here is the website tooling for each of the various Litmus
 websites:
 
 <!-- markdownlint-disable line-length -->
-
+       
 | Site                                                  | Repository                                               | Tool or Stack            |
 | ----------------------------------------------------- | -------------------------------------------------------- | ------------------------ |
 | [Project website](https://litmuschaos.io/)            | https://github.com/litmuschaos/litmus-website-2          | React/Next/Tailwind/SCSS |
 | [Documentation website](https://docs.litmuschaos.io/) | https://github.com/litmuschaos/litmus-docs/              | Docusaurus/Netlify       |
 | [Tutorials](https://v2-docs.litmuschaos.io/tutorials) | https://github.com/litmuschaos/tutorials                 | Google Codelab?          |
-| APIs                                                  | https://github.com/litmuschaos/litmus/tree/master/mkdocs | MkDocs                   |
+| [APIs][api-site]                                      | https://github.com/litmuschaos/litmus/tree/master/mkdocs | MkDocs                   |
 
 <!-- markdownlint-enable line-length -->
 
@@ -631,7 +621,7 @@ in the doc repo. There seems to be an active mentorship program for the project,
 but not necessarily for documentation.
 
 The site build time is probably reasonable, though maintaining separate builds
-for the site, docs, tutorials, and APIs adds complexity and takes time.
+for the site, docs, tutorials, and the API adds complexity and takes time.
 
 Site maintainers presumably have adequate permissions to clone the doc repo(s)
 and submit PRs.
@@ -649,7 +639,7 @@ Combine all the website pages into a single repo. Ideally, this includes:
 
 - The project website
 - The documentation
-- The APIs
+- The API
 - Tutorials
 
 Use a single website technology stack for the entire site.
@@ -712,7 +702,7 @@ No recommendations.
 
 ##### Rating values
 
-The numeric rating values used in this document are as follows
+The numeric rating values used in this document are as follows:
 
 1. Not present
 2. Needs improvement
@@ -720,6 +710,7 @@ The numeric rating values used in this document are as follows
 4. Meets or exceeds standards
 5. Exemplary
 
+[api-site]: https://litmuschaos.github.io/litmus/graphql/v2.0.0/api.html
 [criteria]: ../../docs/analysis/criteria.md
 [implementation]: ./litmuschaos-implementation.md
 [issues]: ./litmuschaos-issues.md
