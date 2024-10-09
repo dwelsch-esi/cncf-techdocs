@@ -2,7 +2,7 @@
 title: LitmusChaos Documentation Analysis
 tags: LitmusChaos
 created: 2024-08-02
-modified: 2024-08-19
+modified: 2024-10-09
 author: Dave Welsch (@dwelsch-esi)
 ---
 
@@ -125,8 +125,9 @@ to legal requirements such as copyright and licensing issues.
 
 ## Project documentation
 
-LitmusChaos is a **graduated** project of CNCF. This means that the project
-should have [_very high_][criteria] standards for documentation.
+LitmusChaos is an **incubating** project of CNCF, applying to be a **graduated**
+project. This means that the project should have [_very high_][criteria]
+standards for documentation.
 
 | Criterion                  |                      |
 | -------------------------- | -------------------- |
@@ -344,8 +345,9 @@ they imply actions that might be difficult for disabled users.
 
 ## Contributor documentation
 
-LitmusChaos is a **graduated** project of CNCF. This means that the project
-should have [_very high_][criteria] standards for documentation.
+LitmusChaos is an **incubating** project of CNCF, applying to be a **graduated**
+project. This means that the project should have [_very high_][criteria]
+standards for documentation.
 
 | Criterion                                 |                               |
 | ----------------------------------------- | ----------------------------- |
@@ -431,8 +433,9 @@ No recommendations.
 
 ## Website and infrastructure
 
-LitmusChaos is a **graduated** project of CNCF. This means that the project
-should have [_very high_][criteria] standards for documentation.
+LitmusChaos is an **incubating** project of CNCF, applying to be a **graduated**
+project. This means that the project should have [_very high_][criteria]
+standards for documentation.
 
 | Criterion                                   |                               |
 | ------------------------------------------- | ----------------------------- |
