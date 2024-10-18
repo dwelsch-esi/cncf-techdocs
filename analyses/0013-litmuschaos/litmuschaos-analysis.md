@@ -438,19 +438,19 @@ project. This means that the project should have [_very high_][criteria]
 standards for documentation.
 
 | Criterion                                   |                               |
-| ------------------------------------------- | ----------------------------- |
+| ------------------------------------------- |-------------------------------|
 | Single-source for all files                 | 2. Needs improvement          |
 | Meets min website req. (for maturity level) | 2. Needs improvement          |
 | Usability, accessibility, and design        | 2. Needs improvement          |
 | Branding and design                         | 2. Needs improvement          |
 | Case studies/social proof                   | 4. Meets or exceeds standards |
-| SEO, Analytics, and site-local search       | TODO                          |
+| SEO, Analytics, and site-local search       | 2. Needs improvement          |
 | Maintenance planning                        | 2. Needs improvement          |
 | A11y plan & implementation                  | 1. Not present                |
 | Mobile-first plan & impl.                   | 4. Meets or exceeds standards |
 | HTTPS access & HTTP redirect                | 4. Meets or exceeds standards |
-| Google Analytics 4 for production only      | TODO                          |
-| Indexing allowed for production server only | TODO                          |
+| Google Analytics 4 for production only      | 1. Not present                |
+| Indexing allowed for production server only | 1. Not present                |
 | Intra-site / local search                   | 3. Meets standards            |
 | Account custodians are documented           | 2. Needs improvement          |
 
@@ -589,18 +589,12 @@ landing page. None of the logos link to anything.
 
 #### SEO, Analytics and site-local search
 
-TODO
-
 - Analytics:
-  - Is analytics enabled for the production server?
-  - Is analytics disabled for all other deploys?
-  - If your project used Google Analytics, have you migrated to GA4?
-  - Can Page-not-found (404) reports easily be generated from you site
-    analytics? Provide a sample of the site's current top-10 404s.
+  - Analytics is not enabled for the site.
 - Is site indexing supported for the production server, while disabled for
   website previews and builds for non-default branches?
-- Is local intra-site search available from the website?
-- Are the current custodian(s) of the following accounts clearly documented:
+- Local intra-site search is not available from the website, though it is available on the documentation subsite.
+- The current custodian(s) of the following accounts are not yet clearly documented:
   analytics, Google Search Console, site-search (such as Google CSE or Algolia)
 
 #### Maintenance planning
@@ -690,7 +684,11 @@ Update or remove the CNCF announcement in the banner menu Community drop-down.
 
 #### SEO, Analytics and site-local search
 
-TODO
+No analytics setup. Recommend adding LitmusChaos to the CNCF Google Analytics 
+account.
+
+Search is available for documentation, but it doesn't appear available for
+other parts of the website (like the blog or community pages.)
 
 #### Maintenance planning
 
