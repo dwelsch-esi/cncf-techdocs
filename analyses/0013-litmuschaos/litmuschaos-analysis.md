@@ -16,8 +16,8 @@ author: Dave Welsch (@dwelsch-esi)
 This document analyzes the effectiveness and completeness of the
 [LitmusChaos][project-website] open source software (OSS) project's
 documentation and website. It is funded by the CNCF Foundation as part of its
-overall effort to incubate, grow, and graduate open source cloud native
-software projects.
+overall effort to incubate, grow, and graduate open source cloud native software
+projects.
 
 According to CNCF best practices guidelines, effective documentation is a
 prerequisite for program graduation. The documentation analysis is the first
@@ -30,9 +30,8 @@ This document was written to analyze the current state of LitmusChaos
 documentation. It aims to provide project leaders with an informed understanding
 of potential problems in current project documentation. A second
 [implementation] document outlines an actionable plan for improvement. A third
-document is an [issues list] of issues to be added to the project documentation
-repository. These issues can be taken up by contributors to improve the
-documentation.
+document is an [issues list] of issues to be added to the project documentation repository.
+These issues can be taken up by contributors to improve the documentation.
 
 This document:
 
@@ -65,8 +64,8 @@ GitHub repo.
 #### Out of scope
 
 - Other LitmusChaos repos: <https://github.com/litmuschaos/>\*
-- Litmus Software (a completely unrelated company and product based in Massachusetts):
-  https://litmus.com/*
+- Litmus Software (a completely unrelated company and product based in
+  Massachusetts): https://litmus.com/*
 
 ### How this document is organized
 
@@ -142,10 +141,10 @@ standards for documentation.
 The following sections contain brief assessments of each element of the Project
 Documentation rubric.
 
-Organization of the [doc page](https://docs.litmuschaos.io/) at the top level
-is unconventional. The Documentation tab in the banner menu has several
-graphically displayed options. The main one leads to a documentation main page
-that has tiled options organized in groups:
+Organization of the [doc page](https://docs.litmuschaos.io/) at the top level is
+unconventional. The Documentation tab in the banner menu has several graphically
+displayed options. The main one leads to a documentation main page that has
+tiled options organized in groups:
 
 - Explore using Litmus
 - Litmus for Advanced Users
@@ -163,8 +162,8 @@ at least two sections, "Introduction" and "Concepts".
 The main documentation site seems feature-complete. However, the documentation
 resides on several websites. The tutorials have their own site
 
-The documentation for the [API][api-site] is on its own website and is 
-maintained from the main project repository. The API documentation is 
+The documentation for the [API][api-site] is on its own website and is
+maintained from the main project repository. The API documentation is
 incomplete, containing very sparse semantic information about the API endpoints,
 objects, and actions.
 
@@ -172,8 +171,8 @@ There are step-by-step instructions for most important functionality, including
 installation, configuration, and running a "first-time" experiment.
 
 - Formatting and organization of the instructions is inconsistent.
-- Some minor functionality does not have complete step-by-step instructions.
-  For example, a link in the instructions to connect an external delegate in
+- Some minor functionality does not have complete step-by-step instructions. For
+  example, a link in the instructions to connect an external delegate in
   [Schedule a chaos scenario](https://v2-docs.litmuschaos.io/docs/user-guides/schedule-workflow)
   point to the `litmusctl` reference. While relevant, this is not the same as
   explicit instructions for connecting to a delegate.
@@ -190,10 +189,9 @@ what to do with them. The individual tasks are atomic and well documented.
 
 There are escalation paths in the documentation, including a FAQ, a
 Troubleshooting section, and a link to the
-[Issues](https://github.com/litmuschaos/litmus/issues) section
-in the project main GitHub repo. There is also a Community section in the
-table of contents that describes the Slack channel, community meetings,
-events, and so on.
+[Issues](https://github.com/litmuschaos/litmus/issues) section in the project
+main GitHub repo. There is also a Community section in the table of contents
+that describes the Slack channel, community meetings, events, and so on.
 
 The content seems up to date. There is a version selection drop-down that
 contains the latest release of the product.
@@ -213,10 +211,10 @@ New users will be confused as to where to start. There are at least four
   repo) that contains a "getting started" tutorial.
 
 Installation is documented in both self-hosted and hosted (beta) forms.
-Self-hosted installation is further divided into Helm- and YAML-based
-(kubectl) processes. The last step of the kubectl install process has two
-options, basic and advanced. The advanced option takes the user to yet another
-install page, "ChaosCenter Advanced Installation".
+Self-hosted installation is further divided into Helm- and YAML-based (kubectl)
+processes. The last step of the kubectl install process has two options, basic
+and advanced. The advanced option takes the user to yet another install page,
+"ChaosCenter Advanced Installation".
 
 The advanced install page is a duplicate of the main install page, with
 duplicate Helm install instructions and verification procedure; the only
@@ -255,8 +253,8 @@ documented in the documentation repo.
 The documentation build process is documented in README files on the doc GitHub
 repo; it consists of brief descriptions of the commands needed to build the
 documentation locally. There don't seem to be deployment instructions.
-Instructions for contributing doc changes are in the CONTRIBUTING.md file in
-the docs repo.
+Instructions for contributing doc changes are in the CONTRIBUTING.md file in the
+docs repo.
 
 There is nothing in the main release process about documentation. There is a
 wikiin the main project repo. One of the things it contains is a list of SIGs
@@ -287,8 +285,8 @@ documentation set. Consolidate the documentation so that, to the extent
 possible, it is maintained in a single repo.
 
 Add semantic information and examples to the API reference. Current API
-documentation is mostly skeletal, containing no guidance on how to use the
-API elements.
+documentation is mostly skeletal, containing no guidance on how to use the API
+elements.
 
 Write tasks and procedures as step-by-step instructions. Ensure that tasks are
 complete. For complex procedures, it's OK to link to sub-procedures or (usually
@@ -305,8 +303,8 @@ user role at the top of the guide.
 #### New user content
 
 Make all "Getting Started" links point to the same place. This should be a
-landing page that describes the main user roles or user scenarios and links to
-a separate getting-started workflow for each one. For example, self-hosted and
+landing page that describes the main user roles or user scenarios and links to a
+separate getting-started workflow for each one. For example, self-hosted and
 hosted installs are probably appropriate for developer and admin user roles,
 respectively. Explain the usage scenario at the top of each procedure.
 
@@ -316,8 +314,8 @@ main procedure or include them as prereqs.
 
 Explicitly call out the operating system for every install procedure.
 
-Rename "Learn more" at the end of procedures and tasks to "Next steps".
-Explain who would want to do each item and why in a short paragraph.
+Rename "Learn more" at the end of procedures and tasks to "Next steps". Explain
+who would want to do each item and why in a short paragraph.
 
 #### Content maintainability & site mechanics
 
@@ -328,20 +326,20 @@ Limit on-site search to the current version of the documentation.
 Add documentation as a step in the project release process. Link to the
 CONTRIBUTING.md doc in the docs repo.
 
-Update the wiki in the main project repo to indicate that the documentation
-SIG is no longer active, and provide a link so that users can find monthly
-meetings or whatever the closest replacement is.
+Update the wiki in the main project repo to indicate that the documentation SIG
+is no longer active, and provide a link so that users can find monthly meetings
+or whatever the closest replacement is.
 
-Ensure that the documentation maintainers listed in the MAINTAINERS.md file
-in the main project repo are up to date.
+Ensure that the documentation maintainers listed in the MAINTAINERS.md file in
+the main project repo are up to date.
 
 #### Inclusive language
 
-Audit the documentation and replace instances of non-recommended words from
-the [Inclusive Naming Initiative](https://inclusivenaming.org) website,
-especially tier 1 and tier 2 words, where possible. Similarly, audit the
-site for words and phrases like "simple", "easy", and "just have to ..." where
-they imply actions that might be difficult for disabled users.
+Audit the documentation and replace instances of non-recommended words from the
+[Inclusive Naming Initiative](https://inclusivenaming.org) website, especially
+tier 1 and tier 2 words, where possible. Similarly, audit the site for words and
+phrases like "simple", "easy", and "just have to ..." where they imply actions
+that might be difficult for disabled users.
 
 ## Contributor documentation
 
@@ -395,9 +393,9 @@ in the doc repo at the time of this writing, 16 are over two years old.
 There is a clearly marked Community link on the documentation website.
 
 The CONTRIBUTING.md file in the documentation repo explains how to start
-contributing documentation and invites newcomers to community meetings and
-the SIG group. This information seems out of date, however, and the SIG group
-seems to have gone dormant.
+contributing documentation and invites newcomers to community meetings and the
+SIG group. This information seems out of date, however, and the SIG group seems
+to have gone dormant.
 
 New contributors probably end up going to the Litmus Slack channel and asking
 for help getting started.
@@ -405,9 +403,9 @@ for help getting started.
 #### Project governance documentation
 
 Project governance is documented in the GOVERNANCE.md document on the main
-project GitHub repository. The document includes maintainer responsibilities
-and reference to the project's Code of Conduct. The document references
-sub-project repositories.
+project GitHub repository. The document includes maintainer responsibilities and
+reference to the project's Code of Conduct. The document references sub-project
+repositories.
 
 The documentation repository does not have its own explicit governance document.
 Its CONTRIBUTING.md file does not address governance.
@@ -438,7 +436,7 @@ project. This means that the project should have [_very high_][criteria]
 standards for documentation.
 
 | Criterion                                   |                               |
-| ------------------------------------------- |-------------------------------|
+| ------------------------------------------- | ----------------------------- |
 | Single-source for all files                 | 2. Needs improvement          |
 | Meets min website req. (for maturity level) | 2. Needs improvement          |
 | Usability, accessibility, and design        | 2. Needs improvement          |
@@ -467,28 +465,28 @@ Litmus has separate websites for its documentation and for its project website.
 
 The project website has been replaced:
 
-The [new project repo](<https://github.com/litmuschaos/litmus-website-2>)
-seems to be currently maintained and was last touched in May of 2024.
+The [new project repo](https://github.com/litmuschaos/litmus-website-2) seems to
+be currently maintained and was last touched in May of 2024.
 
-An obsolete website named "website-litmuschaos: is archived at the same 
-GitHub URL and was last updated three years ago. The archived repo is 
-listed on the project page. Aside from a "Public archive" badge in the 
-repo directory, there is no indication that the old website repo is 
-inactive, nor is there a link in the archive to the current repo.
+An obsolete website named "website-litmuschaos: is archived at the same GitHub
+URL and was last updated three years ago. The archived repo is listed on the
+project page. Aside from a "Public archive" badge in the repo directory, there
+is no indication that the old website repo is inactive, nor is there a link in
+the archive to the current repo.
 
-There is a dedicated repository for the LitmusChaos documentation. However,
-the following documentation is maintained separately, in different locations:
+There is a dedicated repository for the LitmusChaos documentation. However, the
+following documentation is maintained separately, in different locations:
 
-- The **tutorials** do not seem to have been provided beyond release 2. The
-  menu item for Tutorials is missing from v3.0 and later. The tutorial directory
-  and repository are separate from those for the main documentation site.
+- The **tutorials** do not seem to have been provided beyond release 2. The menu
+  item for Tutorials is missing from v3.0 and later. The tutorial directory and
+  repository are separate from those for the main documentation site.
 - The **API** for the control center is separate from the main documentation and
   seems to be served from GitHub.
 
-The API seems to be documented from the main code repo. There is
-no hint that this is the API documentation (unless you're aware that the
-`mkdocs` directory is for the API). There does not seem to be a documented
-strategy for updating the API or linking the API to the documentation website.
+The API seems to be documented from the main code repo. There is no hint that
+this is the API documentation (unless you're aware that the `mkdocs` directory
+is for the API). There does not seem to be a documented strategy for updating
+the API or linking the API to the documentation website.
 
 #### Minimal website requirements
 
@@ -505,7 +503,8 @@ Listed here are the minimal website requirements for projects at graduated
 | **Project doc**: hosting      | Hosted directly                           | TODO |
 | **Project doc**: user docs    | Fully addresses needs of key stakeholders | No   |
 
-[maturity-level]: https://github.com/cncf/toc/tree/main/process#ii-stages---definitions--expectations
+[maturity-level]:
+  https://github.com/cncf/toc/tree/main/process#ii-stages---definitions--expectations
 
 <!-- markdownlint-enable line-length -->
 
@@ -537,21 +536,21 @@ There is no text-to-speech option available on the site.
 Branding seems inconsistent.
 
 There is a recognizable logo and color scheme for most of the sites. However,
-sites that are built from other repos (the API, the experiment library)
-have different color schemes and font choices. For example, the font used in the
-logo is different between the project website and the documentation website.
+sites that are built from other repos (the API, the experiment library) have
+different color schemes and font choices. For example, the font used in the logo
+is different between the project website and the documentation website.
 
 Page design uses different layouts on different pages. The documentation layout
 is a single column, with graphics in-line, which is appropriate. The project
 landing page, the API page, and the tutorial page all use different layouts.
 
 The brand's base font is a legible sans-serif font. The tutorial site landing
-page uses similar fonts but the tutorials themselves have a completely
-different look and feel, with a serif font and an outdated left-justified
-single frame presentation.
+page uses similar fonts but the tutorials themselves have a completely different
+look and feel, with a serif font and an outdated left-justified single frame
+presentation.
 
-Several of the project pages, including the blog and the ChaosHub page, use
-a tiled layout. However, the tiles are of very different sizes so the feel of
+Several of the project pages, including the blog and the ChaosHub page, use a
+tiled layout. However, the tiles are of very different sizes so the feel of
 these pages is not consistent.
 
 Many of the graphical elements on the project landing page seem like they should
@@ -581,11 +580,11 @@ README.md file.
 
 There is a Litmus Chaos channel on YouTube featuring how-to videos and
 recordings of community meetings. Only a few community meetings are posted;
-either the monthly meeting schedule is not being kept or the recordings are
-not being posted regularly.
+either the monthly meeting schedule is not being kept or the recordings are not
+being posted regularly.
 
-There is a logo wall of 70 organizations that use Litmus on the project
-landing page. None of the logos link to anything.
+There is a logo wall of 70 organizations that use Litmus on the project landing
+page. None of the logos link to anything.
 
 #### SEO, Analytics and site-local search
 
@@ -593,9 +592,11 @@ landing page. None of the logos link to anything.
   - Analytics is not enabled for the site.
 - Is site indexing supported for the production server, while disabled for
   website previews and builds for non-default branches?
-- Local intra-site search is not available from the website, though it is available on the documentation subsite.
-- The current custodian(s) of the following accounts are not yet clearly documented:
-  analytics, Google Search Console, site-search (such as Google CSE or Algolia)
+- Local intra-site search is not available from the website, though it is
+  available on the documentation subsite.
+- The current custodian(s) of the following accounts are not yet clearly
+  documented: analytics, Google Search Console, site-search (such as Google CSE
+  or Algolia)
 
 #### Maintenance planning
 
@@ -603,7 +604,7 @@ As far as I can tell, here is the website tooling for each of the various Litmus
 websites:
 
 <!-- markdownlint-disable line-length -->
-       
+
 | Site                                                  | Repository                                               | Tool or Stack            |
 | ----------------------------------------------------- | -------------------------------------------------------- | ------------------------ |
 | [Project website](https://litmuschaos.io/)            | https://github.com/litmuschaos/litmus-website-2          | React/Next/Tailwind/SCSS |
@@ -666,8 +667,8 @@ case.
 Consider revising the site look and feel to include more contrasting color
 choices.
 
-Either fix the command-K search functionality or remove the command-K icon
-from the search input.
+Either fix the command-K search functionality or remove the command-K icon from
+the search input.
 
 #### Branding and design
 
@@ -684,11 +685,11 @@ Update or remove the CNCF announcement in the banner menu Community drop-down.
 
 #### SEO, Analytics and site-local search
 
-No analytics setup. Recommend adding LitmusChaos to the CNCF Google Analytics 
+No analytics setup. Recommend adding LitmusChaos to the CNCF Google Analytics
 account.
 
-Search is available for documentation, but it doesn't appear available for
-other parts of the website (like the blog or community pages.)
+Search is available for documentation, but it doesn't appear available for other
+parts of the website (like the blog or community pages.)
 
 #### Maintenance planning
 
