@@ -10,7 +10,7 @@ on:
   schedule: daily
   workflow_dispatch:
   # workflow will no longer trigger after 30 days. Remove this and recompile to run indefinitely
-  stop-after: +1mo 
+  stop-after: +1mo
 permissions:
   contents: read
   issues: read
@@ -20,8 +20,8 @@ tools:
   github:
 safe-outputs:
   create-discussion:
-    title-prefix: "[team-status] "
-    category: "announcements"
+    title-prefix: '[team-status] '
+    category: 'announcements'
 source: githubnext/agentics/workflows/daily-team-status.md@697e9d890f9a084587b8380f1bcd29eec4adb4bd
 ---
 
